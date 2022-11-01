@@ -1,15 +1,28 @@
 #include<stdio.h>
+
 main()
+
 {
-	float a,b;
-	printf("输入一个实数：");
-	scanf("%f",&a);
-	if(a>=0)
-	{
-		b=a; 
-	}
-	else
-	b=-a;
-	printf("绝对值=%f",b);
-	return 0;
+
+    int x=1, find=0;
+
+    while(!find)
+
+    {
+
+        if(x%2==1&&x%3==2&&x%5==4&&x%6==5&&x%7==0)
+
+        {
+
+            printf("x=%d\n",x);
+
+            find = 1;
+
+            x++;
+
+        }
+        else x++;
+
+    }
+
 }
